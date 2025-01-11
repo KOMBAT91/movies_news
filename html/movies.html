@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/movies.css">
+    <title>Movie News</title>
+</head>
+<body>
+    <header>
+        <a href="index.html">
+            <button class="home-btn">Home</button>
+        </a>
+        <form id="form">
+            <input type="text" placeholder="Search" id="search" class="search">
+        </form>
+    </header>
+
+    <!-- Контейнер для динамических тегов -->
+    <div id="tags"></div>
+
+    <!-- Доп окно -->
+    <div id="myNav" class="overlay">
+
+        <!-- Кнопка закр. доп окна -->
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      
+        <!-- Контент доп окна динамический -->
+        <div class="overlay-content" id="overlay-content"></div>
+        
+        <!-- переход к предыдущему трейлеру -->
+        <a href="javascript:void(0)" class="arrow left-arrow" id="left-arrow">&#8656;</a> 
+        
+        <!-- переход к следующему трейлеру -->
+        <a href="javascript:void(0)" class="arrow right-arrow" id="right-arrow">&#8658;</a>
+
+    </div>
+
+    <main id="main"></main>
+
+    <div class="pagination">
+        <!-- на предыдущую страницу -->
+        <div class="page" id="prev">Previous Page</div>
+
+        <!-- Текущая страница -->
+        <div class="current" id="current">1</div>
+
+        <!-- на следующую страницу -->
+        <div class="page" id="next">Next Page</div>
+    </div>
+
+    <script src="/js/movies.js"></script>
+</body>
+</html>
